@@ -1,6 +1,9 @@
 'use client';
 import Head from "next/head";
 import Carousel from "../components/Carousel";
+import Collage from "../components/Collage";
+import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 export default function Home() {
@@ -14,6 +17,29 @@ export default function Home() {
       image: "paginamabelle2.webp",
       title: "Una experiencia para toda la vida.",
       subtitle: "Encuentra ese vestido que te hace vibrar por dentro. Contamos con estilos exclusivos para novias, graduadas y quinceañeras.",
+    },
+  ];
+
+  const collageItems = [
+    {
+      image: "paginamabelle.webp",
+      title: "Vestidos para toda ocasión",
+      description: "En MaBelle creemos que cada momento especial merece el vestido perfecto. Descubre nuestra amplia colección diseñada para hacer realidad tus sueños.",
+    },
+    {
+      image: "paginamabelle2.webp",
+      title: "BODAS",
+      description: "Vestidos de novia únicos que capturan la esencia de tu amor. Desde diseños clásicos hasta estilos contemporáneos, encuentra el vestido que te hará sentir radiante en tu día más importante.",
+    },
+    {
+      image: "paginamabelle.webp",
+      title: "FIESTAS",
+      description: "Elegancia y sofisticación para cada celebración. Vestidos de gala que te harán brillar en graduaciones, eventos especiales y todas esas ocasiones memorables.",
+    },
+    {
+      image: "paginamabelle2.webp",
+      title: "QUINCEAÑERAS",
+      description: "El vestido de tus quince años, ese momento mágico donde te conviertes en princesa. Diseños espectaculares que marcarán el inicio de una nueva etapa llena de sueños.",
     },
   ];
 
@@ -42,15 +68,18 @@ export default function Home() {
           style={{ bottom: "20px", right: "20px" }}
         />
 
-      <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
-        <nav className="flex justify-between items-center px-6 py-4">
-          <img src="/logo-mabelle.svg" alt="MaBelle Logo" className="h-8" />
-          <button className="border border-black dark:border-white px-4 py-2 rounded hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
-            Agendar cita
-          </button>
-        </nav>
+      <main className="min-h-screen bg-white text-gray-600 transition-colors duration-300">
         <Carousel slides={slides} interval={5000} />
+        <Collage 
+          items={collageItems} 
+          title="Cada momento merece un vestido especial"
+          titleFont="font-serif"
+        />
       </main>
+
+      <FAQ />
+
+      <Footer />
     </>
   );
 }

@@ -59,10 +59,7 @@ export default function Carousel({ slides, interval = 5000 }: CarouselProps) {
                             >
                                 {slide.title}
                             </h2>
-                            <p
-                                className="text-white text-lg md:text-xl"
-                                style={{ fontFamily: "Heist, sans-serif" }}
-                            >
+                            <p className="text-white text-lg md:text-xl">
                                 {slide.subtitle}
                             </p>
                         </div>

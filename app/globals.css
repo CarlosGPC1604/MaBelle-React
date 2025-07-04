@@ -22,5 +22,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Geist, Arial, Helvetica, sans-serif;
+}
+
+.styles-module_input__WFb9L{
+  color: black;
+}
+
+.styles-module_buttonSend__kXjja > svg {
+  margin-left: auto;
+  margin-right: auto;
 }
