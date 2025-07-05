@@ -13,13 +13,13 @@ const motivationCards: MotivationCard[] = [
     {
         title: "Haz realidad tu vestido soñado",
         description: "Sentirte tú misma, pero más radiante. Con cada prueba, no solo encuentras un vestido, encuentras una emoción: la certeza de que será inolvidable y perfecto para ti. Todo está pensado para que disfrutes este momento.",
-        image: "Foto1.png",
+        image: "Foto1.webp",
         position: "left"
     },
     {
         title: "Cada diseño tiene una historia",
         description: "La experiencia incluye acceso a colecciones internacionales, asesoría personalizada y pruebas en privado. No necesitas viajar ni recorrer cientos de tiendas: todo lo que necesitas está reunido aquí.",
-        image: "Foto2.png",
+        image: "Foto2.webp",
         position: "right"
     }
 ];
