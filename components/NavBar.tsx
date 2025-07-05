@@ -35,7 +35,7 @@ export default function NavBar() {
             isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
         }`}>
             <a href="/" className="flex items-center space-x-2 md:space-x-3">
-                <img src="/logo-mabelle.svg" alt="MaBelle Logo" className="h-6 md:h-8" />
+                <img src="/logo-mabelle.svg" alt="MaBelle Logo" className="h-6 md:h-8 transform transition duration-150 hover:scale-105" />
             </a>
             <div className="flex items-center space-x-1 md:space-x-2">
                 <a href="https://www.facebook.com/profile.php?id=100072275331516" title="Facebook Link" target="_blank" rel="external noopener" className="text-neutral-700 px-2 py-2 md:px-3 md:py-2 hover:text-[#0866ff] transition">
