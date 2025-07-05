@@ -31,7 +31,7 @@ export default function Carousel({ slides, interval = 5000 }: CarouselProps) {
     }, [current, interval]);
 
     return (
-        <div className="relative w-full h-[90vh] overflow-hidden">
+        <div className="relative w-full h-[100vh] overflow-hidden">
             <div
                 className="flex transition-transform duration-1000 ease-in-out h-full"
                 style={{ transform: `translateX(-${current * 100}%)` }}
@@ -53,13 +53,10 @@ export default function Carousel({ slides, interval = 5000 }: CarouselProps) {
                             }}
                         />
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                            <h2
-                                className="text-white text-4xl md:text-5xl font-bold mb-4"
-                                style={{ fontFamily: "Oranienbaum, serif" }}
-                            >
+                            <h2 className="text-white text-4xl md:text-5xl font-bold mb-4">
                                 {slide.title}
                             </h2>
-                            <p className="text-white text-lg md:text-xl">
+                            <p className="text-white text-lg md:text-xl font-sans">
                                 {slide.subtitle}
                             </p>
                         </div>

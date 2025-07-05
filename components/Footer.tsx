@@ -1,13 +1,15 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
     return (
         <footer className="bg-gray-100 py-8 px-4">
             <div className="max-w-4xl mx-auto">
                 {/* Información de contacto */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6 text-center md:text-left">
                     {/* Dirección */}
                     <div className="space-y-1">
                         <h3 className="font-semibold text-gray-800 mb-2">Dirección</h3>
-                        <a href="https://g.co/kgs/akxBa3u" className="text-sm hover:text-[#016a52] text-gray-600">
+                        <a href="https://maps.app.goo.gl/eP3Jh3ENACaUjCmR6" className="text-sm hover:text-[#016a52] text-gray-600">
                             Av. del ejército #300.<br />
                             Col. Residencial La Loma.
                         </a>
@@ -35,6 +37,31 @@ export default function Footer() {
                         >
                             311-233-17-51
                         </a>
+                    </div>
+
+                    {/* Redes sociales */}
+                    <div className="space-y-1">
+                        <h3 className="font-semibold text-gray-800 mb-2">Síguenos</h3>
+                        <div className="flex justify-center md:justify-start gap-3">
+                            <a 
+                                href="https://www.facebook.com/profile.php?id=100072275331516" 
+                                title="Facebook" 
+                                target="_blank" 
+                                rel="external noopener"
+                                className="text-gray-600 hover:text-[#0866ff] transition-colors duration-200 p-1"
+                            >
+                                <FaFacebook className="text-lg" />
+                            </a>
+                            <a 
+                                href="https://www.instagram.com/mabelle.novias/" 
+                                title="Instagram" 
+                                target="_blank" 
+                                rel="external noopener"
+                                className="text-gray-600 hover:text-[#ff0e5d] transition-colors duration-200 p-1"
+                            >
+                                <FaInstagram className="text-lg" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 

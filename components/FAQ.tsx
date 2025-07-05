@@ -10,41 +10,49 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
     {
-        question: "¿Cuánto tiempo de anticipación necesito para reservar mi vestido?",
-        answer: "Recomendamos hacer la reserva con 3-6 meses de anticipación para bodas y quinceañeras, y 2-3 semanas para eventos especiales. Esto nos permite realizar ajustes perfectos y garantizar la disponibilidad del vestido que más te guste."
+        question: "¿Y si no encuentro el vestido que me gusta?",
+        answer: "Te ayudamos a probar diferentes estilos y cortes hasta encontrar ese que te emociona. Nuestro catálogo es muy amplio, con piezas únicas que no verás en otras tiendas."
     },
     {
-        question: "¿Realizan ajustes y modificaciones a los vestidos?",
-        answer: "¡Por supuesto! Contamos con un equipo de costureras expertas que realizan ajustes personalizados para que tu vestido te quede perfecto. Los ajustes básicos están incluidos en el precio, y las modificaciones especiales tienen un costo adicional."
+        question: "¿Y si me enamoro de un vestido pero no me queda?",
+        answer: "Todos los vestidos se ajustan a tu medida o se ordena en tu talla con nuestros proveedores. Nuestro equipo especializado hace las pruebas necesarias para que el vestido se sienta como si hubiera sido hecho para ti."
     },
     {
-        question: "¿Qué tallas manejan en sus vestidos?",
-        answer: "Trabajamos con tallas desde XS hasta 4XL. Además, muchos de nuestros vestidos pueden ser ajustados para adaptarse perfectamente a tu figura. En tu cita, nuestras asesoras te ayudarán a encontrar la talla ideal."
+        question: "¿Cuánto tiempo antes debo agendar mi cita?",
+        answer: "Para vestidos de novia, lo ideal es agendar tu cita al menos 6 meses antes del evento. Así tendrás tiempo para vivir la experiencia completa sin prisas."
     },
     {
-        question: "¿Puedo agendar una cita para probarse vestidos?",
-        answer: "Sí, recomendamos agendar una cita para brindarte una atención personalizada. Puedes llamarnos al 311-133-26-15, enviarnos un WhatsApp al 311-233-17-51 o usar el botón 'Agendar cita' en nuestra página web."
+        question: "¿Puedo llevar acompañantes a mi cita?",
+        answer: "Claro que sí. Sabemos lo importante que es compartir este momento con las personas que amas. Puedes traer a tu mamá, amigas o quien desees. Recomendamos a máximo 5 personas."
     },
     {
-        question: "¿Cuáles son sus métodos de pago?",
-        answer: "Aceptamos efectivo, tarjetas de débito y crédito, transferencias bancarias y planes de pago flexibles. Para vestidos de alta gama, ofrecemos planes de financiamiento sin intereses para que puedas tener el vestido de tus sueños."
+        question: "¿Sus vestidos están disponibles en renta o solo venta?",
+        answer: "Tenemos línea de renta en vestidos de noche, tus invitadas los amarán"
     },
     {
-        question: "¿Tienen vestidos para alquiler o solo venta?",
-        answer: "Ofrecemos ambas opciones. Contamos con vestidos para venta y una exclusiva colección para alquiler, perfecta para eventos especiales, graduaciones y fiestas. Los precios varían según el tipo de vestido y la duración del alquiler."
+        question: "¿Cuentan con accesorios para el look completo?",
+        answer: "Contamos con todo tipo de accesorios desde calzado, velos y mantillas, tocados, aretes, arras, lazos y todo lo que necesitas en un solo lugar."
     },
     {
-        question: "¿Qué incluye el servicio de asesoría de imagen?",
-        answer: "Nuestro servicio incluye consultoría personalizada de estilo, recomendaciones de accesorios, consejos de maquillaje y peinado que complementen tu vestido. Te ayudamos a crear un look completo para que te sientas radiante en tu evento especial."
+        question: "¿Puedo apartar mi vestido y pagarlo en partes?",
+        answer: "Sí. Puedes apartarlo con una parte del total y cubrirlo a plazos durante 4 meses. También aceptamos pagos con tarjeta de crédito."
     },
     {
-        question: "¿Tienen política de cambios o devoluciones?",
-        answer: "Para vestidos de alquiler, realizamos cambios hasta 48 horas antes del evento (sujeto a disponibilidad). Para vestidos de venta, aceptamos cambios dentro de los primeros 7 días si el vestido no ha sido alterado y conserva todas sus etiquetas."
+        question: "¿Y si al final no quiero el vestido?",
+        answer: "Si cancelas con más de 10 días de anticipación, te devolvemos el 80% en monedero electrónico para futuras compras o servicios."
+    },
+    {
+        question: "¿La cita tiene algún costo?",
+        answer: "Las citas no tienen ningún costo ni compromiso, ven con la tranquilidad de disfrutar la experiencia."
+    },
+    {
+        question: "¿Puedo ver los modelos antes de agendar cita?",
+        answer: "Puedes conocer parte de nuestras colecciones en redes sociales, pero la experiencia completa y personalizada solo sucede al agendar tu cita. Ahí es donde la magia comienza."
     }
 ];
 
 export default function FAQ() {
-    const [openItems, setOpenItems] = useState<number[]>([0, 1, 2, 3, 4, 5, 6, 7]); // Todas las preguntas expandidas por defecto
+    const [openItems, setOpenItems] = useState<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]); // Todas las preguntas expandidas por defecto
 
     const toggleItem = (index: number) => {
         setOpenItems(prev =>
@@ -154,32 +162,6 @@ export default function FAQ() {
                                 </div>
                             );
                         })}
-                    </div>
-                </div>
-
-                {/* Call to action */}
-                <div className="text-center mt-12 p-8 bg-[#016a52] rounded-2xl text-white">
-                    <h3 className="text-2xl font-semibold mb-3">
-                        ¿Tienes más preguntas?
-                    </h3>
-                    <p className="mb-6 text-lg opacity-90">
-                        Estamos aquí para ayudarte a encontrar el vestido perfecto
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="tel:+523111332615"
-                            className="bg-white text-[#016a52] px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200"
-                        >
-                            Llamar ahora
-                        </a>
-                        <a
-                            href="https://wa.me/523112331751"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-[#016a52] transition-colors duration-200"
-                        >
-                            WhatsApp
-                        </a>
                     </div>
                 </div>
             </div>

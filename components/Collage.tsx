@@ -81,10 +81,10 @@ export default function Collage({ items, title, titleFont = "font-serif" }: Coll
                                         }
                   `}
                                 >
-                                    <h3 className="text-xl md:text-2xl font-bold mb-2 leading-tight">
+                                    <h3 className="text-xl md:text-2xl font-sans font-bold mb-2 leading-tight">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm md:text-base opacity-90 leading-relaxed text-pretty">
+                                    <p className="text-sm md:text-base font-sans opacity-90 leading-relaxed text-pretty">
                                         {item.description}
                                     </p>
                                 </div>
