@@ -1,6 +1,7 @@
 'use client';
 import Head from "next/head";
 import Carousel from "../components/Carousel";
+import Local from "@/components/Local";
 import Collage from "../components/Collage";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -34,12 +35,12 @@ export default function Home() {
       description: "Vestidos de novia únicos que capturan la esencia de tu amor. Desde diseños clásicos hasta estilos contemporáneos, encuentra el vestido que te hará sentir radiante en tu día más importante.",
     },
     {
-      image: "Foto5.webp",
+      image: "Foto7.webp",
       title: "FIESTAS",
       description: "Elegancia y sofisticación para cada celebración. Vestidos de gala que te harán brillar en graduaciones, eventos especiales y todas esas ocasiones memorables.",
     },
     {
-      image: "Foto4.webp",
+      image: "Foto8.webp",
       title: "QUINCEAÑERAS",
       description: "El vestido de tus quince años, ese momento mágico donde te conviertes en princesa. Diseños espectaculares que marcarán el inicio de una nueva etapa llena de sueños.",
     },
@@ -80,6 +81,8 @@ export default function Home() {
           titleFont="font-serif"
         />
       </main>
+
+      <Local />
 
       <BuySection />
 
