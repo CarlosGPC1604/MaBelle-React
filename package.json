@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "mabelle.com.mx",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,3 +25,4 @@
     "typescript": "^5"
   }
 }
+Corregido el nombre del proyecto en el package.json
