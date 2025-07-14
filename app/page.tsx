@@ -1,5 +1,4 @@
 'use client';
-import Head from "next/head";
 import Carousel from "../components/Carousel";
 import Local from "@/components/Local";
 import Collage from "../components/Collage";
@@ -48,18 +47,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>MaBelle</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="icon" type="image/png" href="/favicon-96x96.webp" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp" />
-        <meta name="apple-mobile-web-app-title" content="MaBelle" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </Head>
-
       <FloatingWhatsApp
         phoneNumber="+523112331751"
         accountName="MaBelle"
