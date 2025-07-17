@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MaBelle - Vestidos de Novia, Quinceañeras y Fiestas | Momentos Únicos",
-  description: "Descubre vestidos únicos para novias, quinceañeras y eventos especiales en MaBelle. Diseños exclusivos que harán de tu momento especial una experiencia unforgettable. Bodas, graduaciones y celebraciones.",
-  keywords: "vestidos de novia, vestidos de quinceañera, vestidos de fiesta, bodas, graduaciones, eventos especiales, MaBelle, vestidos elegantes, diseños exclusivos",
+  title: "Vestidos de Novia y Fiesta en Tepic | MaBelle",
+  description: "Descubre vestidos únicos para novias, quinceañeras y eventos especiales en MaBelle. Diseños exclusivos que harán de tu momento especial una experiencia inolvidable. Bodas, graduaciones y celebraciones.",
+  keywords: "vestidos tepic, bodas tepic, vestidos de novia, vestidos de quinceañera, vestidos de fiesta, MaBelle, vestidos elegantes, tepic fiesta",
   authors: [{ name: "MaBelle" }],
   robots: "index, follow",
   openGraph: {
     type: "website",
-    url: "https://mabelle.com/",
-    title: "MaBelle - Vestidos de Novia, Quinceañeras y Fiestas",
+    url: "https://mabelle.com.mx/",
+    title: "Vestidos de Novia y Fiesta en Tepic | MaBelle",
     description: "Vestidos únicos para momentos especiales. Encuentra el vestido perfecto para bodas, quinceañeras y eventos especiales en MaBelle.",
     images: [
       {
@@ -78,12 +78,18 @@ export default function RootLayout({
               "@type": "ClothingStore",
               "name": "MaBelle",
               "description": "Tienda especializada en vestidos de novia, quinceañeras y eventos especiales",
-              "url": "https://mabelle.com",
+              "url": "https://mabelle.com.mx",
               "telephone": "+523112331751",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "MX"
+                "addressCountry": "MX",
+                "addressLocality": "Tepic",
+                "addressRegion": "Nayarit",
+                "postalCode": "63135",
+                "streetAddress": "Av. Av Del Ejército 300A"
               },
+              "image": "https://mabelle.com.mx/paginamabelle.webp",
+              "priceRange": "$$",
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -96,6 +102,10 @@ export default function RootLayout({
             })
           }}
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
