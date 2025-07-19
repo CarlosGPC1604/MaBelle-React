@@ -26,7 +26,7 @@ const motivationCards: MotivationCard[] = [
 
 export default function MotivationSection() {
     return (
-        <section className="py-16 px-4 bg-white overflow-hidden">
+        <section className="py-8 px-4 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 {motivationCards.map((card, index) => (
                     <div

@@ -16,22 +16,22 @@ export default function Local({
 
     const localImages = [
         {
-            src: "/Local/1.webp",
+            src: "/Mabelle2.jpeg",
             alt: "Vista interior del local MaBelle - Área principal",
             caption: "Área Principal"
         },
         {
-            src: "/Local/2.webp", 
+            src: "/Local/3.webp", 
             alt: "Vista interior del local MaBelle - Zona de productos",
             caption: "Zona de Productos"
         },
         {
-            src: "/Local/3.webp",
+            src: "/Mabelle1.jpeg",
             alt: "Vista interior del local MaBelle - Espacio de atención",
             caption: "Espacio de Atención"
         },
         {
-            src: "/Local/4.webp",
+            src: "/Local/1.webp",
             alt: "Vista interior del local MaBelle - Ambiente completo",
             caption: "Ambiente Completo"
         }
@@ -46,8 +46,8 @@ export default function Local({
                 </h2>
 
                 {/* Descripción opcional */}
-                <p className="text-center text-gray-600 mb-12 md:mb-16 max-w-2xl mx-auto text-lg">
-                    Te invitamos a conocer nuestro acogedor espacio donde encontrarás los mejores productos de belleza y cuidado personal.
+                <p className="text-center text-gray-600 mb-8 md:mb-8 max-w-2xl mx-auto text-lg">
+                    Te invitamos a conocer nuestro acogedor espacio donde encontrarás los mejores productos de belleza y cuidado personal. <b>Visítanos en Av. del Ejército #300, Col. Residencial La Loma.</b>
                 </p>
 
                 {/* Layout optimizado para imágenes horizontales 16:9 */}

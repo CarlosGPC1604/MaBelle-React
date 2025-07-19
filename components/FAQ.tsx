@@ -63,7 +63,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="py-16 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+        <section className="py-8 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-50">
             <div className="max-w-10xl mx-auto">
                 {/* Título principal */}
                 <div className="text-center mb-12">

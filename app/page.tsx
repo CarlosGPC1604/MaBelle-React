@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import BuySection from "@/components/BuySection";
 import MotivationSection from "@/components/MotivationSection";
+import ShoesAccesories from "@/components/ShoesAccesories";
 
 export default function Home() {
   const slides = [
@@ -24,24 +25,19 @@ export default function Home() {
 
   const collageItems = [
     {
-      image: "Foto3.webp",
-      title: "VESTIDOS Y ACCESSORIOS",
-      description: "En MaBelle creemos que cada momento especial merece el vestido perfecto. Descubre nuestra amplia colección diseñada para hacer realidad tus sueños.",
-    },
-    {
-      image: "Foto6.webp",
+      image: "Damas.webp",
       title: "BODAS",
       description: "Vestidos de novia únicos que capturan la esencia de tu amor. Desde diseños clásicos hasta estilos contemporáneos, encuentra el vestido que te hará sentir radiante en tu día más importante.",
     },
     {
-      image: "Foto7.webp",
-      title: "FIESTAS",
-      description: "Elegancia y sofisticación para cada celebración. Vestidos de gala que te harán brillar en graduaciones, eventos especiales y todas esas ocasiones memorables.",
-    },
-    {
-      image: "Foto8.webp",
+      image: "Quinceañeras.webp",
       title: "QUINCEAÑERAS",
       description: "El vestido de tus quince años, ese momento mágico donde te conviertes en princesa. Diseños espectaculares que marcarán el inicio de una nueva etapa llena de sueños.",
+    },
+    {
+      image: "Fiesta.webp",
+      title: "FIESTAS",
+      description: "Elegancia y sofisticación para cada celebración. Vestidos de gala que te harán brillar en graduaciones, eventos especiales y todas esas ocasiones memorables.",
     },
   ];
 
@@ -68,6 +64,8 @@ export default function Home() {
           titleFont="font-serif"
         />
       </main>
+
+      <ShoesAccesories />
 
       <Local />
 

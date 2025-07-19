@@ -39,10 +39,10 @@ export default function NavBar() {
             </a>
             <div className="flex items-center space-x-1 md:space-x-2">
                 <a href="https://www.facebook.com/profile.php?id=100072275331516" title="Facebook Link" target="_blank" rel="external noopener" className="text-neutral-700 px-2 py-2 md:px-3 md:py-2 hover:text-[#0866ff] transition">
-                    <FaFacebook className="text-xl md:text-lg" />
+                    <FaFacebook className="text-xl md:text-2xl" />
                 </a>
                 <a href="https://www.instagram.com/mabelle.novias/" title="Instagram Link" target="_blank" rel="external noopener" className="text-neutral-700 px-2 py-2 md:px-3 md:py-2 hover:text-[#ff0e5d] transition">
-                    <FaInstagram className="text-xl md:text-lg" />
+                    <FaInstagram className="text-xl md:text-2xl" />
                 </a>
                 <button className="hidden sm:block rounded px-3 py-1 md:px-2 md:py-2 bg-[#016a52] hover:bg-[#335a51] hover:text-white transition text-sm md:text-base ml-2 md:ml-4">
                     Agendar cita

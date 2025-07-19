@@ -19,13 +19,12 @@ export default function Collage({ items, title, titleFont = "font-serif" }: Coll
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-12 px-4 md:py-16 md:px-6">
+        <section className="py-10 px-4 md:py-16 md:px-6">
             <div className="max-w-10xl mx-auto">
                 {/* Título principal */}
                 <h2 className={`text-3xl md:text-4xl lg:text-5xl text-center mb-8 md:mb-12 text-gray-800 ${titleFont}`}>
                     {title}
                 </h2>
-
                 {/* Collage responsive */}
                 <div className="flex flex-col md:flex-row gap-2 md:gap-1 h-auto md:h-[500px] lg:h-[600px]">
                     {items.map((item, index) => {
